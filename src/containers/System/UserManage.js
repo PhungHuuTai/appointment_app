@@ -47,7 +47,7 @@ class UserManage extends Component {
                         {arrUsers &&
                             arrUsers.map((item, index) => {
                                 return (
-                                    <tr>
+                                    <tr key={item.id}>
                                         <td>{item.email}</td>
                                         <td>{item.firstName}</td>
                                         <td>{item.lastName}</td>
@@ -55,10 +55,10 @@ class UserManage extends Component {
                                         <td>
                                             <button className='btn-edit'>
                                                 <i className="fas fa-pencil-alt"></i>
-                                                </button>
+                                            </button>
                                             <button className='btn-delete'>
                                                 <i className="fas fa-trash-alt"></i>
-                                                </button>
+                                            </button>
                                         </td>
                                     </tr>
                                 );
