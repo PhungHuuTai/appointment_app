@@ -10,7 +10,6 @@
 
         .left-content {
             width: 25%;
-            border: 1px solid green;
             display: flex;
             align-items: center;
 
@@ -30,7 +29,6 @@
 
         .center-content {
             width: 50%;
-            border: 1px solid blue;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -45,7 +43,6 @@
 
         .right-content {
             width: 25%;
-            border: 1px solid gray;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,4 +52,103 @@
             }
         }
     }
+}
+
+.home-header-banner {
+    background: url('../../assets/header-background.jpg');
+    height: 485px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    .content-up {
+        border: 1px solid red;
+        height: 50%;
+        padding-top: 15px;
+
+        .title1 {
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 1px #333;
+            margin-bottom: 5px;
+            margin-top: 30px;
+        }
+    
+        .title2 {
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 1px #333;
+            margin-bottom: 15px;
+        }
+    
+        .search {
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 25px;
+            background: #f7d800;
+    
+            i {
+                margin: 0 5px;
+            }
+    
+            input {
+                height: 30px;
+                width: 360px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    
+    .content-down {
+        border: 1px solid green;
+        height: 50%;
+
+        .options {
+            text-align: center;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+
+            .option-child {
+                width: 100px;
+                border: 1px solid red;
+
+                .icon-child {
+                    background: white;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    padding: 10px;
+                    text-align: center;
+                    margin: 0 auto;
+
+                    i {
+                        font-size: 20px;
+                        color: #49bce2;
+                    }
+                }
+
+                .text-child {
+                    font-size: 17px;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #49bce2;
+                    }
+                }
+            }
+        }
+    }  
 }
